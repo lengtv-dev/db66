@@ -2,8 +2,8 @@
 
 export const M3u8ProxyV1 = async (request: Request<unknown>) => {
   const url = new URL(request.url);
-  const refererUrl = decodeURIComponent(url.searchParams.get("referer") || "");
-  const targetUrl = decodeURIComponent(url.searchParams.get("url") || "");
+  const refererUrl = decodeURIComponent(url.searchParams.get("referer") || "https://embed.bananacreamcafe.com");
+  const targetUrl = decodeURIComponent(url.searchParams.get("url") || "https://embed.bananacreamcafe.com");
   const originUrl = decodeURIComponent(url.searchParams.get("origin") || "");
   const proxyAll = decodeURIComponent(url.searchParams.get("all") || "");
 
