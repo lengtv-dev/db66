@@ -5,7 +5,7 @@ export const M3u8ProxyV1 = async (request: Request<unknown>) => {
   const refererUrl = decodeURIComponent(url.searchParams.get("referer") || "https://embed.bananacreamcafe.com");
   const targetUrl = decodeURIComponent(url.searchParams.get("url") || "");
   const originUrl = decodeURIComponent(url.searchParams.get("origin") || "https://embed.bananacreamcafe.com");
-  const proxyAll = decodeURIComponent(url.searchParams.get("all") || "https://embed.bananacreamcafe.com/dooball66v2/ajax_player.php?channel=sd-tsports&api_key=MIcWPyCpm6maZGJQ&origin=https://embed.bananacreamcafe.com");
+  const proxyAll = decodeURIComponent(url.searchParams.get("all") || "");
 
   if (!targetUrl) {
     return new Response("Invalid URL", { status: 400 });
